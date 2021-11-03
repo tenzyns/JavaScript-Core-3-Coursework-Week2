@@ -1,7 +1,7 @@
 const btn = document.createElement("button");
-btn.textContent = "Click for a Paw";
+btn.textContent = "Click for a paw";
 btn.style.backgroundColor = "orange";
-btn.style.width = "100px"
+btn.style.width = "100px";
 const dogDiv = document.getElementById("dog-img");
 const unorderedLi = document.createElement("ul");
 dogDiv.appendChild(btn);
@@ -16,7 +16,7 @@ fetch("https://dog.ceo/api/breeds/image/random")
     const dogImg = document.createElement("img");
     dogImg.src = dogImageUrl.message;
     dogImg.alt = "";
-    dogImg.style.width = "300px";
+    dogImg.style.width = "100%";
     liEl.appendChild(dogImg);        
     unorderedLi.appendChild(liEl);
     btn.addEventListener("click", () => {
