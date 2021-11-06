@@ -5,7 +5,6 @@ fetch("https://xkcd.now.sh/?comic=latest")
     return response.json();  
 })
 .then((data) => {
-    console.log(data);
     const imgEl = document.createElement("img");
     imgEl.src = data.img;
     imgEl.alt = data.alt;
